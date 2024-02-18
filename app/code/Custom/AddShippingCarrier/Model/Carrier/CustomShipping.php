@@ -38,7 +38,7 @@ class CustomShipping extends AbstractCarrier implements CarrierInterface
      * @param RateRequest $request
      * @return Result|bool
      */
-    public function collectsRates(RateRequest $request): Result|bool
+    public function collectRates(RateRequest $request): Result|bool
     {
         if(!$this->getConfigFlag('active'))
         {
